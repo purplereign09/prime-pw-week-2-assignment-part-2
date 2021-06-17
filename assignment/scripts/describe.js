@@ -134,11 +134,14 @@ if (number >= 2) {
 // colorTwo is set to 'red', and mix is set to true. We check if mix is true
 // -- it is, so we set colorOne and colorTwo to 'purple'
 
+
+// FIX - The instructions set colorOne to 'blue' and colorTwo to 'red'. Below, the code is set in the opposite manner
 /*
 let colorOne = 'red';
 let colorTwo = 'blue';
 let mix = true;
 
+// FIX - colorTwo set to 'purple' is missing from this block. Include colorTwo set to 'purple' below colorOne
 if (mix === true) {
   colorOne = 'purple';
 }
@@ -152,6 +155,7 @@ if (mix === true) {
 let temp = 40;
 const time = 4;
 
+// FIX - the comparison operator should be && not || according to the instructions.
 if (temp > 39 || time >= 4) {
   console.log('throw away the food!');
 }
@@ -164,6 +168,14 @@ if (temp > 39 || time >= 4) {
 /*
 let age = 21;
 const minAge = 21;
+
+
+// FIX - The instructions state that the program checks if age is greater than or equal to minAge; however, because the values are both 21, one will never be greater than the other. So, one potential solution is to change the variable <age> to 22 so that one value is greater than the other and the console logs 'enter'.
+
+let age = 22;
+const minAge = 21;
+
+// Also, the program below checks for the opposite condition: if age is less than or equal to minAge. To fix this change the symbol to >= to reflect the instructions.
 
 if(minAge <= age) {
   console.log('no entry');
